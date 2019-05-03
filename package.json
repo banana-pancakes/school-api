@@ -1,0 +1,22 @@
+{
+  "name": "school-api",
+  "version": "1.0.0",
+  "description": "school API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banana-pancakes/school-api.git"
+  },
+  "author": "Banana Pancakes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/banana-pancakes/school-api/issues"
+  },
+  "homepage": "https://github.com/banana-pancakes/school-api#readme",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.1"
+  }
+}
