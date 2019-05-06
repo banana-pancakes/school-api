@@ -1,4 +1,4 @@
-const Hapi = require('hapi')
+const Hapi = require('@hapi/hapi')
 const argv = require('minimist')(process.argv.slice(2))
 
 exports.init = async () => {

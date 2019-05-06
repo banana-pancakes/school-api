@@ -1,16 +1,34 @@
 const log = require('../../utils/beauty-logs')
+const students = require('../../dataset/students.json')
+const teachers = require('../../dataset/teachers.json')
+const error = {
+  statusCode: 500,
+  message: 'Internal server error.'
+}
 
 module.exports = [
   {
     method: 'GET',
-    path: '/test/{id?}',
+    path: '/students',
     handler: async (request, h) => {
-      const id = request.params.id ? request.params.id : null
       try {
-        return id
+        return students
       } catch (ex) {
         log.error(ex)
-        return 500
+        return error
+      }
+    }
+  },
+
+  {
+    method: 'GET',
+    path: '/teachers',
+    handler: async (request, h) => {
+      try {
+        return teachers
+      } catch (ex) {
+        log.error(ex)
+        return error
       }
     }
   }
