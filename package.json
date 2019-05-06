@@ -4,7 +4,8 @@
   "description": "school API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js",
+    "test": "standard --fix --verbose"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,13 @@
   },
   "homepage": "https://github.com/banana-pancakes/school-api#readme",
   "dependencies": {
-    "@hapi/hapi": "^18.3.1"
+    "@hapi/hapi": "^18.3.1",
+    "log-symbols": "^3.0.0",
+    "minimist": "^1.2.0",
+    "wreck": "^14.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "standard": "^12.0.1"
   }
 }
